@@ -1,10 +1,10 @@
-# 💱 Rates Service - Microservicios de Tasas de Cambio
+# Rates Service - Orquestador de Microservicios de Tasas de Cambio
 
 Sistema de microservicios para scrapear y actualizar tasas de cambio USD/VES desde múltiples fuentes.
 
 ---
 
-## 📦 Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 rates-service/
@@ -36,7 +36,7 @@ rates-service/
 
 ---
 
-## 🚀 Inicio Rápido
+## Inicio Rápido
 
 ### Opción 1: Con PM2 (Recomendado para Producción)
 
@@ -62,7 +62,7 @@ node server.js
 
 ---
 
-## 🎯 Microservicios Incluidos
+## Microservicios Incluidos
 
 ### 1. **BCV Microservice** (Puerto 3001)
 - **Fuente**: Banco Central de Venezuela (www.bcv.org.ve)
@@ -94,20 +94,20 @@ node server.js
 
 ---
 
-## 📊 Características
+## Características
 
-✅ **Orquestación con PM2**: Gestión centralizada de microservicios  
-✅ **Auto-restart**: Reinicio automático en caso de crash  
-✅ **Cron Jobs**: Actualizaciones automáticas programadas  
-✅ **Logs Estructurados**: Sistema de logging detallado  
-✅ **Graceful Shutdown**: Cierre limpio de recursos  
-✅ **Bypass Anti-Bot**: Sistema inteligente para evadir protecciones  
-✅ **Health Checks**: Endpoints de verificación de estado  
-✅ **Navegador Persistente**: Optimización de recursos (Binance)  
+- **Orquestación con PM2**: Gestión centralizada de microservicios  
+- **Auto-restart**: Reinicio automático en caso de crash  
+- **Cron Jobs**: Actualizaciones automáticas programadas  
+- **Logs Estructurados**: Sistema de logging detallado  
+- **Graceful Shutdown**: Cierre limpio de recursos  
+- **Bypass Anti-Bot**: Sistema inteligente para evadir protecciones  
+- **Health Checks**: Endpoints de verificación de estado  
+- **Navegador Persistente**: Optimización de recursos (Binance)  
 
 ---
 
-## 🔧 Configuración
+## Configuración
 
 ### Variables de Entorno
 
@@ -126,7 +126,7 @@ env: {
 
 ---
 
-## 📝 Comandos PM2
+## Comandos PM2
 
 ### Gestión Básica
 ```bash
@@ -155,7 +155,7 @@ pm2 startup                       # Configurar auto-inicio
 
 ---
 
-## 🧪 Testing
+## Testing
 
 ### Verificar Estado
 ```bash
@@ -181,7 +181,7 @@ curl -X POST http://localhost:3000/update-rate
 
 ---
 
-## 📁 Logs
+## Logs
 
 Los logs se guardan en:
 - `./logs/bcv-error.log` - Errores BCV
@@ -195,7 +195,7 @@ Cada microservicio también guarda logs detallados en:
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Servicio no inicia
 ```bash
@@ -223,14 +223,14 @@ pm2 logs --err
 
 ---
 
-## 📚 Documentación Adicional
+## Documentación Adicional
 
 - **[README-PM2.md](./README-PM2.md)** - Documentación completa de PM2
 - **[QUICK-START.md](./QUICK-START.md)** - Guía rápida de comandos
 
 ---
 
-## 🎯 Uso Recomendado
+## Uso Recomendado
 
 | Entorno | Método | Comando |
 |---------|--------|---------|
@@ -241,7 +241,7 @@ pm2 logs --err
 
 ---
 
-## 📌 Notas Importantes
+## Notas Importantes
 
 - **BCV** usa Axios + Cheerio (ligero, ideal para scraping simple)
 - **Binance** usa Puppeteer (más pesado, necesario para JavaScript dinámico)
@@ -252,7 +252,7 @@ pm2 logs --err
 
 ---
 
-## 🆘 Soporte
+## Soporte
 
 Para más información:
 - PM2 Docs: https://pm2.keymetrics.io/docs/
@@ -261,9 +261,9 @@ Para más información:
 
 ---
 
-## 📄 Licencia
+## Licencia
 
-Este proyecto es privado y de uso interno.
+Este proyecto es privado y de uso interno. (Se permite el fork del proyecto, y del orquestador)
 
 ---
 
